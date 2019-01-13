@@ -1,4 +1,24 @@
-#one {
-    margin-bottom: 20px;
 
+.jumbotron {
+    background-image: url("../images/bismuthback.jpg");
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+.card-header{
+    background: thistle ;
+    font-size: 20px;
+}
+
+h1 {
+color: #f2f2f2;
+font-size: 70px;
+font-weight: bold;
+text-align: center;
+}
+
+body {
+    background: #f2f2f2;
 }
