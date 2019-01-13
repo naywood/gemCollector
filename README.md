@@ -1,6 +1,8 @@
 # unit-4-game
 Crystal Collector
 
+https://naywood.github.io/unit-4-game/
+
 This is a game I created using JQuery, Bootstrap, HTML, and CSS.
 
 I expect that I'll updates to this overtime to increase the "wow" factor.
