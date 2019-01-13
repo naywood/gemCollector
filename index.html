@@ -5,6 +5,7 @@
     <title>Crystal Collector</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
+    
     <!-- loaded bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
@@ -21,7 +22,7 @@
               </div>
             </div>
         
-        <div class= "row">
+        <div class= "row" id="one">
             <div class = "col-sm-12">
                     <div class="card">
                             <div class="card-header text-center"> Instructions</div>
@@ -43,7 +44,7 @@
                     <div class="card">
                     <div class="card-header text-center">Target Score</div>
                     <div class="card-body">
-                        <h3 class="text-center">78</h3>
+                        <h3 class="text-center" id= "targetScore"></h3>
                     </div>
                   </div>
             </div>
@@ -52,52 +53,54 @@
                     <div class="card">
                     <div class="card-header text-center">Your Score</div>
                     <div class="card-body">
-                        <h3 class="text-center">78</h3>
+                        <h3 class="text-center" id="yourScore"></h3>
                     </div>
                   </div>
             </div>
 
-            <div class= "col-sm-6">
+
+            <div class= "col-sm">
                     <div class="card">
-                    <div class="card-header text-center">Crystals</div>
-                    <div class="card-body text-center">
-                        <img src="assets/images/bismuth.jpg" id="bismuth">
-                        <img src="assets/images/rose.jpg" id="rose">
-                        <img src="assets/images/opal.jpg" id="opal">
-                        <img src="assets/images/jade.jpeg" id="jade">
-
+                    <div class="card-header text-center">Wins</div>
+                         <h3 class="card-body text-center" id="win"> 0 </h3>
+                              </div>
+                </div>
+                <div class= "col-sm">
+                    <div class="card">
+                     <div class="card-header text-center">Losses</div>
+                        <h3 class="card-body text-center" id="lost">0</h3>
                     </div>
-                  </div>
-            </div>
+                </div>
+
+            
         </div>
-        <!--Row that counts-->
+
         <div class= "row">
-            <div class= "col-sm-6">
-                <div class="card">
-                <div class="card-header text-center">Wins</div>
-                     <div class="card-body text-center">
-                               
-        
-                            </div>
-                          </div>
-
-            </div>
-            <div class= "col-sm-6">
-                <div class="card">
-                 <div class="card-header text-center">Losses</div>
-                    <div class="card-body text-center">
-                                       
-                
-                                    </div>
-                                  </div>
-
-            </div>
+                <div class= "col-sm-12" >
+                        <div class="card">
+                        <div class="card-header text-center">Crystals</div>
+                        <div class="card-body text-center">
+                            <img src="assets/images/bismuth.jpg" id="bismuth">
+                            <img src="assets/images/rose.jpg" id="rose">
+                            <img src="assets/images/opal.jpg" id="opal">
+                            <img src="assets/images/jade.jpeg" id="jade">
+    
+                        </div>
+                      </div>
+                </div>
 
 
         </div>
 
         </div>
 
+<!--Jquery is linked here-->
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+<!--main game logic is linked here-->
 <script src= "assets/javascript/game.js"></script>
 </body>
 </html>
