@@ -1,8 +1,8 @@
 //GLOBAL VARIABLES
 //
 
-// Crystal Variables
-var crystal = {
+// gem Variables
+var gem = {
     bismuth:
     {
         name: "Bismuth",
@@ -48,11 +48,11 @@ var startGame = function() {
     // Set new Target Score (19-120)
     targetScore = getRandom (19, 120);
 
-    // different values for each crystal between 1-12
-    crystal.bismuth.value = getRandom (1, 12);
-    crystal.rose.value = getRandom (1, 12);
-    crystal.opal.value =  getRandom (1, 12);
-    crystal.jade.value = getRandom (1, 12);
+    // different values for each gem between 1-12
+    gem.bismuth.value = getRandom (1, 12);
+    gem.rose.value = getRandom (1, 12);
+    gem.opal.value =  getRandom (1, 12);
+    gem.jade.value = getRandom (1, 12);
 
     // Change HTML to reflect all changes
     $("#yourScore").html(currentScore);
@@ -63,8 +63,8 @@ var startGame = function() {
 
 // FUNCTION THAT RESPONDS TO CLICKS
 
-var addValues = function(crystal) {
-currentScore = currentScore + crystal.value; 
+var addValues = function(gem) {
+currentScore = currentScore + gem.value; 
 //adding to card
 $("#yourScore").html(currentScore);
 checkWin();
@@ -105,16 +105,16 @@ startGame();
 
 
 $("#bismuth").click(function() {
-    addValues(crystal.bismuth);
+    addValues(gem.bismuth);
 });
 
 $("#rose").click(function() {
-    addValues(crystal.rose);
+    addValues(gem.rose);
 });
 $("#opal").click(function() {
-    addValues(crystal.opal);
+    addValues(gem.opal);
 });
 
 $("#jade").click(function() {
-    addValues(crystal.jade);
+    addValues(gem.jade);
 });
