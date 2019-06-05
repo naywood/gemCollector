@@ -1,6 +1,6 @@
 # Crystal Collector
 
-https://naywood.github.io/unit-4-game/
+https://naywood.github.io/gemCollector/
 
 This is a game I created using JQuery, Bootstrap, HTML, and CSS.
 
